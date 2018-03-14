@@ -33,6 +33,9 @@ socket으로 emit하는 방식으로 구현하여클라이언트가 많아지면
 ## Usage
 
 ~~~shell
+# github repository clone
+$ git clone https://github.com/jicjjang/bitest_front
+
 # install dependencies
 $ npm i
 
