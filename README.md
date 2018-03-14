@@ -46,3 +46,12 @@ $ npm run dev
 # build for production with minification
 $ npm run build   # Available after deployment.
 ~~~
+
+## Test case
+
+### test usage
+
+~~~shell
+# run all tests
+$ npm run test
+~~~
