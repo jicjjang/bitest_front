@@ -8,14 +8,14 @@
       <img :src="isDragging ? require('../assets/dropzone_inactive.png') : require('../assets/dropzone_active.png')" alt="dropzone">
       <input multiple
              type="file"
-             @change="fileUploader($event.target.files)" />
+             @change="fileUploader($event.target.files)" id="fileUploader"/>
     </div>
   </article>
 </template>
 
 <script>
 export default {
-  name: 'insertArea',
+  name: 'dropZone',
   props: {
     emitter: {
       type: Function
@@ -55,7 +55,9 @@ export default {
       }
     },
     _fileSender () {
-      this.emitter('file parser', this.tradeList.split('\n'))
+      this.emitter('file parser', this.tradeList)
+      // 이 값을 안넣어주며 같은 파일을 새로고침 전까지 못넣음.
+      document.getElementById('fileUploader').value = ''
       this.tradeList = ''
     }
   },
