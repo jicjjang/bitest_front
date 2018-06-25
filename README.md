@@ -21,14 +21,14 @@ socket으로 emit하는 방식으로 구현하여클라이언트가 많아지면
 요청마다 1초씩 텀을 두고 작업을 하게됨.
 
 (해결) 입력받은 파일의 String만 그대로 서버로 옮겨서 임시 저장공간
-([bitest_server](https://github.com/jicjjang/biteset_server) 에서는
+([bitest_server](https://github.com/jicjjang/bitest_server) 에서는
 변수에 저장하도록 하였음. 추후 디비로 확장 가능)에 저장해 놓고, 클라이언트들이 입력할 때 마다
 저장 공간에 추가하는 방식으로 수정.
 
 ## Configuration
 
 - Vue + socket.io
-- [Server Repository](https://github.com/jicjjang/biteset_server)
+- [Server Repository](https://github.com/jicjjang/bitest_server)
 
 ## Usage
 
